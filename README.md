@@ -2,13 +2,18 @@
 
 [![Build](https://github.com/grafana/grafana-starter-panel/workflows/CI/badge.svg)](https://github.com/grafana/grafana-starter-panel/actions?query=workflow%3A%22CI%22)
 
-This template is a starting point for building Grafana Panel Plugins in Grafana 7.0+
+This plugin visualizes fusioncharts inside grafana panel
 
-## What is Grafana Panel Plugin?
+## Features -
 
-Panels are the building blocks of Grafana. They allow you to visualize data in different ways. While Grafana has several types of panels already built-in, you can also build your own panel, to add support for other visualizations.
+* All charts that falls under FusionCharts suite are supported
+* Dynamic chart type change
+* Update data at the run time
 
-For more information about panels, refer to the documentation on [Panels](https://grafana.com/docs/grafana/latest/features/panels/panels/)
+## Upcoming Features -
+* Passing license configuration
+* Support for FusionTime & FusionGrid
+* Rendering charts using various timeseries datasources
 
 ## Getting started
 
@@ -38,7 +43,5 @@ For more information about panels, refer to the documentation on [Panels](https:
 
 ## Learn more
 
-- [Build a panel plugin tutorial](https://grafana.com/tutorials/build-a-panel-plugin)
 - [Grafana documentation](https://grafana.com/docs/)
-- [Grafana Tutorials](https://grafana.com/tutorials/) - Grafana Tutorials are step-by-step guides that help you make the most of Grafana
-- [Grafana UI Library](https://developers.grafana.com/ui) - UI components to help you build interfaces using Grafana Design System
+- [FusionCharts] (https://www.fusioncharts.com/dev/chart-guide/list-of-charts) -  List of all supported chart types
