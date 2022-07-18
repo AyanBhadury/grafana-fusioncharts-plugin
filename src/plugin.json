@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/grafana/grafana/master/docs/sources/developers/plugins/plugin.schema.json",
+  "type": "panel",
+  "name": "grafana-fusioncharts-plugin",
+  "id": "ayanbhadury-grafana-fusioncharts-plugin",
+  "info": {
+    "description": "Panel used to visualize fusioncharts in grafana environment",
+    "author": {
+      "name": "AyanBhadury",
+      "url": "https://github.com/ayanbhadury"
+    },
+    "keywords": [
+      "fusioncharts",
+      "grafana",
+      "plugin",
+      "data visualization"
+    ],
+    "logos": {
+      "small": "img/logo.svg",
+      "large": "img/logo.svg"
+    },
+    "links": [
+      {
+        "name": "Website",
+        "url": "https://github.com/grafana/grafana-starter-panel"
+      },
+      {
+        "name": "License",
+        "url": "https://github.com/grafana/grafana-starter-panel/blob/master/LICENSE"
+      }
+    ],
+    "screenshots": [],
+    "version": "%VERSION%",
+    "updated": "%TODAY%"
+  },
+  "dependencies": {
+    "grafanaDependency": ">=7.0.0",
+    "plugins": []
+  }
+}
