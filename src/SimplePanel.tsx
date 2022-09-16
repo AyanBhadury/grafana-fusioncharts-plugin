@@ -17,10 +17,10 @@ import ReactFC from 'react-fusioncharts';
 ReactFC.fcRoot(FusionCharts, Charts, Widgets, PowerCharts,ZoomScatter,ZoomLine,FusionMaps, USA,FusionTheme);
 
 //@ts-ignore
-FusionCharts.options['license']({
-  key: 'vtA3dB-11wF2A2H2C7D6B5A3F4G4G1D2G1udnE6E1cgkF-7lB7B5F-11izE3E3G2A11C8D6B5B1F4E3F2I3C7B1E4B1mllA33A8B14ROKLJKYHROLDXDRI1f1YYGRe1BF1C2F1oreC7E2B4cetB8A7A5gyF-10D3G2F2A11D2A6F2C5B2C1C1G-7vvC1E5ED1fbqB11D7E6f1dB3E4C3maC5E7E4veB2H1J2saD3F3B1jxA3J1A5A1eevA4G1A26B7A5C3D2E6A1G2H5H1B1A5l==',
-  creditLabel: false,
-});
+// FusionCharts.options['license']({
+//   key: 'vtA3dB-11wF2A2H2C7D6B5A3F4G4G1D2G1udnE6E1cgkF-7lB7B5F-11izE3E3G2A11C8D6B5B1F4E3F2I3C7B1E4B1mllA33A8B14ROKLJKYHROLDXDRI1f1YYGRe1BF1C2F1oreC7E2B4cetB8A7A5gyF-10D3G2F2A11D2A6F2C5B2C1C1G-7vvC1E5ED1fbqB11D7E6f1dB3E4C3maC5E7E4veB2H1J2saD3F3B1jxA3J1A5A1eevA4G1A26B7A5C3D2E6A1G2H5H1B1A5l==',
+//   creditLabel: false,
+// });
 
 const chartConfigs = {
   type: null,
@@ -38,6 +38,7 @@ interface Props extends PanelProps<SimpleOptions> { }
 export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) => {
 
   const styles = getStyles();
+  
 
   return (
     <div
@@ -61,8 +62,19 @@ export const SimplePanel: React.FC<Props> = ({ options, data, width, height }) =
               "beforeRender": (e: any) => {
                 e.sender.setChartAttribute('bgAlpha', "0")
                 e.sender.setChartAttribute('canvasBgAlpha', "0")
+                 // @ts-ignore
+                  FusionCharts.options['license']({
+                    key: options.license_key,
+                    creditLabel: false,
+                    });
+               //   }
+                  },
+              drawComplete: (e: any)=>{
+               // console.log(options.license_key);
               }
             }} />
+
+            
       }
     </div>
 

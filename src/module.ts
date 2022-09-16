@@ -15,5 +15,11 @@ export const plugin = new PanelPlugin<SimpleOptions>(SimplePanel).setPanelOption
     name: 'Datasource',
     description: 'Pass datasource of the chart in json format',
     defaultValue: "",
+  })
+  .addTextInput({
+    path: 'license_key',
+    name: 'License Key',
+    description: 'Pass the license key',
+    defaultValue: "",
   });
 });
