@@ -44,4 +44,4 @@ This plugin visualizes fusioncharts inside grafana panel
 ## Learn more
 
 - [Grafana documentation](https://grafana.com/docs/)
-- [FusionCharts] (https://www.fusioncharts.com/dev/chart-guide/list-of-charts) -  List of all supported chart types
+- [FusionCharts - List of all supported chart types] (https://www.fusioncharts.com/dev/chart-guide/list-of-charts)
