@@ -9,10 +9,11 @@ This plugin visualizes fusioncharts inside grafana panel
 * All charts that falls under FusionCharts suite are supported
 * Dynamic chart type change
 * Update data at the run time
-* Passing license configuration 
+* Passing license configuration
+* Timeseries charts support
 
 ## Upcoming Features -
-* Support for FusionTime & FusionGrid
+* Support for FusionGrid
 * Rendering charts using various timeseries datasources
 
 ## Getting started
